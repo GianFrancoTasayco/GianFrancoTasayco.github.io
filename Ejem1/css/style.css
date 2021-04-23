@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
+  .container-top {
+    display: flex;
+    margin: 0 auto;
+    height: 65px;
+    align-items: center; }
+    .container-top ul {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 75px;
+      align-items: center; }
+      .container-top ul li {
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        font-family: "Lobster", cursive;
+        font-size: 20px; }
+      .container-top ul li a {
+        text-decoration: none;
+        color: #000; }
+      .container-top ul li a img {
+        margin: 0 auto;
+        width: 80px;
+        height: 80px; }
+  .container-mid {
+    background: url(../img/17024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center; }
+    .container-mid-btn {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .container-mid-btn h1 {
+        font-family: "Lobster", cursive;
+        font-size: 60px;
+        color: #5d9e64; }
+      .container-mid-btn h2 {
+        font-family: "Lobster", cursive;
+        font-weight: normal;
+        color: #ffff; }
+      .container-mid-btn a {
+        height: 43px;
+        width: 91px;
+        text-decoration: none;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #8ddc91bf;
+        font-family: "Lobster", cursive; }
+        .container-mid-btn a div {
+          color: #ffff;
+          font-weight: normal; }
+  .container-bot-info {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: "Lobster", cursive;
+    font-size: 13px; }
+    .container-bot-info .txt-if-bot {
+      color: #504f4f; }
+
+/*# sourceMappingURL=style.css.map */
