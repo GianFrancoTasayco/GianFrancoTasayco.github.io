@@ -1,196 +1,248 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Kanit:wght@300;700&display=swap");
 * {
-  padding: 0;
-  margin: 0; }
-
-.icon-chevron-left:before {
-  font-size: 70px;
-  color: #5d9e64;
-  cursor: pointer;
-  position: absolute;
-  left: .5%;
-  z-index: 1;
-  background-color: #ffffffa1;
-  border-radius: 50%; }
-
-.icon-chevron-right:before {
-  font-size: 70px;
-  color: #5d9e64;
-  cursor: pointer;
-  position: absolute;
-  right: .5%;
-  background-color: #ffffffa1;
-  border-radius: 50%;
-  z-index: 1; }
-
-.icon-chevron-left:hover::before {
-  background-color: #fff;
-  transition: 00.5s; }
-
-.icon-chevron-right:hover::before {
-  background-color: #fff;
-  transition: 00.5s; }
+  margin: 0;
+  padding: 0; }
 
 .container {
-  display: flex;
   width: 100%;
-  flex-direction: column; }
-  .container-top {
-    display: flex;
-    margin: 0 auto;
-    height: 65px;
-    align-items: center; }
-    .container-top .img-md a img {
-      margin: 0 auto;
-      width: 80px;
-      height: 80px;
-      display: none; }
-    .container-top ul {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-gap: 75px;
-      align-items: center; }
-      .container-top ul li,
-      .container-top ul div {
-        display: flex;
-        text-align: center;
-        text-decoration: none;
-        font-family: "Lobster", cursive;
-        font-size: 20px; }
-      .container-top ul li a {
-        text-decoration: none;
-        color: #000; }
-      .container-top ul div a img {
-        margin: 0 auto;
-        width: 80px;
-        height: 80px; }
-    .container-top span {
-      cursor: pointer;
-      font-size: 40px;
-      color: #5d9e64;
-      display: none;
-      justify-content: center; }
-  .container-mid {
-    background: url(../img/17024.jpg);
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  font-family: "Kanit", sans-serif; }
+  .container-S {
+    width: 100%;
+    background: url(../img/main-slider/58183300-fondo-transparente-dibujado-a-mano-doodle-de-verduras-iconos-conjunto-ilustración-vectorial-de-temporad.jpg);
+    background-position: center top;
     background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    scroll-behavior: smooth;
-    overflow-x: auto; }
-    .container-mid-btn {
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-out 0s; }
+    .container-S .color {
+      background-color: #00000094; }
+    .container-S-menu {
       margin: 0 auto;
+      width: 95%;
       display: flex;
-      position: relative;
-      flex-direction: column;
-      text-align: center;
-      min-width: 100%;
-      transition: 0.5s; }
-      .container-mid-btn h1 {
-        font-family: "Lobster", cursive;
-        font-size: 60px;
-        color: #5d9e64; }
-      .container-mid-btn h2 {
-        font-family: "Lobster", cursive;
-        font-weight: normal;
-        color: #ffff; }
-      .container-mid-btn a {
-        height: 43px;
-        width: 91px;
-        text-decoration: none;
-        margin: 0 auto;
-        margin-top: 60px;
+      flex-direction: column; }
+      .container-S-menu header {
+        padding: 15px 0;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #8ddc91bf;
-        font-family: "Lobster", cursive; }
-        .container-mid-btn a div {
-          color: #ffff;
-          font-weight: normal; }
-  .container-mid::-webkit-scrollbar {
-    visibility: hidden; }
-  .container-product {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto; }
-    .container-product-info {
-      text-align: center;
-      margin-top: 65px;
-      font-family: "Lobster", cursive;
-      font-size: 35px; }
-    .container-product-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 55px; }
-      .container-product-list a {
-        text-decoration: none; }
-      .container-product-list-fruits {
-        width: 20%;
-        border-radius: 25px;
-        cursor: pointer;
+        justify-content: space-between; }
+        .container-S-menu header .img {
+          width: 170px;
+          height: 85px;
+          padding: 0;
+          background: url(../img/download.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .container-S-menu header ul {
+          display: flex;
+          align-items: center;
+          gap: 20px; }
+          .container-S-menu header ul li {
+            display: flex; }
+            .container-S-menu header ul li a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 15px;
+              font-weight: 700; }
+            .container-S-menu header ul li a:hover {
+              color: #5ec79c; }
+      .container-S-menu div {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
         text-align: center;
-        border-top: solid 1px #ececec;
-        border-left: solid 1px #ececec;
-        padding: 10px;
-        text-shadow: 2px 2px 4px #5d9e64;
-        box-shadow: -10px -10px 15px #fff, 10px 10px 15px #c1c1c1, inset 0px 0px 0px #fff, inset 0px 0px 0px #c1c1c1; }
-        .container-product-list-fruits img {
-          height: auto;
-          width: 60%; }
-        .container-product-list-fruits h1 {
-          font-family: "Lobster", cursive;
-          color: #5d9e64;
-          margin-top: 10px;
-          font-size: 125%; }
-
-@media screen and (max-width: 858px) {
-  .container-top {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-    .container-top .img-md a img {
-      display: flex;
-      width: 65px;
-      height: 65px; }
-    .container-top ul {
-      position: fixed;
+        padding: 170px 0; }
+        .container-S-menu div img {
+          width: 64px;
+          height: auto; }
+        .container-S-menu div h1 {
+          font-family: "Dancing Script", cursive;
+          font-weight: 700;
+          font-size: 43px;
+          color: #fff; }
+        .container-S-menu div div {
+          display: flex;
+          gap: 10px;
+          padding: 10px 0;
+          flex-direction: row;
+          justify-content: center;
+          font-family: "Kanit", sans-serif; }
+          .container-S-menu div div a:nth-child(2) {
+            text-decoration: none;
+            padding: 8px 30px;
+            color: #fff;
+            font-size: 15px;
+            background: #f5b062;
+            border-radius: 25px;
+            font-weight: 700;
+            border: 2px solid #f5b062;
+            transition: all 0.2s ease-out 0s; }
+          .container-S-menu div div a:nth-child(2):hover {
+            background: none;
+            color: #f5b062; }
+          .container-S-menu div div a:nth-child(3) {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 8px 30px;
+            text-decoration: none;
+            font-size: 15px;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: all 0.2s ease-out 0s; }
+          .container-S-menu div div a:nth-child(3):hover {
+            color: #f5b062;
+            background: #fff; }
+          .container-S-menu div div span {
+            cursor: pointer;
+            display: flex;
+            padding: 8px 8px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #5ec79c;
+            border: 2px solid #5ec79c; }
+          .container-S-menu div div span:hover {
+            background: none;
+            color: #5ec79c; }
+      .container-S-menu .top-md:hover .btn {
+        display: flex; }
+  .container-I {
+    width: 100%; }
+    .container-I .color-I {
+      width: 100%;
+      background-color: #c1c1c194; }
+    .container-I-If {
+      padding: 110px 0px 70px;
       display: flex;
       flex-direction: column;
-      width: 100%;
-      background-color: #5d9e64d0;
-      z-index: 2;
-      padding: 20px 0 20px 0px;
-      border-radius: 0px 0px 25px 25px;
-      grid-gap: 50px;
-      top: -300px;
-      transition: all 0.4s; }
-      .container-top ul li {
-        font-weight: bold; }
-      .container-top ul div {
-        display: none; }
-    .container-top .show {
-      top: 65px; }
-    .container-top span {
-      display: grid;
-      grid-column: 3/4; }
+      margin: 0 auto;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .container-I-If .container-logo {
+        width: 100%; }
+        .container-I-If .container-logo h1 {
+          font-family: "Dancing Script", cursive;
+          font-size: 30px;
+          padding: 5px 0; }
+        .container-I-If .container-logo div {
+          margin: 0 auto;
+          width: 50px;
+          height: 3px;
+          background: #5ec79c;
+          border-radius: 25px; }
+      .container-I-If .container-img {
+        padding: 50px 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .container-I-If .container-img div {
+          width: 359px; }
+          .container-I-If .container-img div img {
+            width: 150px;
+            height: 150px;
+            border-radius: 25px; }
+          .container-I-If .container-img div h1 {
+            font-size: 25px;
+            font-weight: 300; }
+          .container-I-If .container-img div a {
+            text-decoration: none;
+            color: #000; }
+          .container-I-If .container-img div p {
+            padding: 10px 0px 10px;
+            font-size: 15px; }
+          .container-I-If .container-img div a:hover {
+            color: #5ec79c; }
+  .container-F {
+    width: 100%;
+    background: #333333; }
+    .container-F .color-Footer {
+      padding: 100px 0;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      justify-content: center; }
+      .container-F .color-Footer div {
+        padding: 10px 0px;
+        width: 400px;
+        display: flex;
+        flex-direction: column; }
+        .container-F .color-Footer div h1 {
+          font-size: 16px;
+          color: #fff;
+          margin-bottom: 20px; }
+        .container-F .color-Footer div p {
+          font-weight: 300;
+          color: #fff;
+          margin-bottom: 20px; }
+        .container-F .color-Footer div div {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .container-F .color-Footer div div p {
+            width: 80%;
+            margin: 0; }
+            .container-F .color-Footer div div p input {
+              padding: 12.5px 145px 12.5px 20px;
+              background: #00000030;
+              border: none;
+              font-family: "Kanit", sans-serif; }
+          .container-F .color-Footer div div a {
+            padding: 10.5px 20px 10.5px 20px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #5ec79c; }
+        .container-F .color-Footer div .social-F {
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          gap: 20px; }
+          .container-F .color-Footer div .social-F span {
+            cursor: pointer;
+            border-radius: 50%;
+            background: #f5b062;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 10px;
+            border: 2px solid #f5b062;
+            transition: all 0.2s ease-out 0s; }
+          .container-F .color-Footer div .social-F span:hover {
+            background: none;
+            color: #f5b062; }
+      .container-F .color-Footer .img-F {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container-F .color-Footer .img-F img {
+          width: 170px !important;
+          height: auto; }
+      .container-F .color-Footer div h2 {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 20px; }
+      .container-F .color-Footer div h1 {
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 20px; }
+      .container-F .color-Footer div .gap-f {
+        display: flex;
+        text-align: center;
+        justify-content: space-between; }
 
-  .fixed {
-    position: fixed;
-    background-color: #fff;
-    transition: 0.4s;
-    z-index: 3;
-    border-radius: 0 0 25px 25px; }
-
-  .container-bot-info {
-    display: flex;
-    flex-direction: column; } }
+.img2 {
+  background: url(../img/main-slider/plant-leaves-green-striped-wallpaper-preview.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-out 0s; }
 
 /*# sourceMappingURL=style.css.map */
